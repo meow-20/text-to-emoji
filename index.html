@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Emoji</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <h1>Text <img id="arrow" width="50" height="50" src="https://img.icons8.com/ios-filled/50/ffffff/long-arrow-right.png" alt="long-arrow-right"/> Emojis</h1>
+        </div>
+        <div class="btn-frame">
+            <div class="enc-btn">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/ffffff/lock.png" alt="lock"/>
+                <h6>Encrypt</h6>
+            </div>
+            <div class="dec-btn">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/ffffff/unlock.png" alt="unlock"/>
+                <h6>Decrypt</h6>
+            </div>
+        </div>
+        <div class="enc-form">
+            <h1>1. Type a message</h1>
+            <textarea placeholder="Encrypt karva mate msg ahi lakho" name="txt" id="enc-txt" cols="50" rows="5"></textarea>
+            <h1>2. Set a password</h1>
+            <input placeholder="E.g: 1234" type="password" name="setpass" id="setpass">
+            <h1>3. Encrypt message</h1>
+            <button id="encryption-btn">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/ffffff/lock.png" alt="lock"/>
+                <h1 id="enc">Encrypt Text</h1>
+            </button>
+        </div>
+        <div class="dec-form">
+            <h1>1. Paste encrypted emojis</h1>
+            <textarea placeholder="Paste encrypted emojis here" name="txt" id="dec-txt" cols="50" rows="5"></textarea>
+            <h1>2. Type the password</h1>
+            <input placeholder="E.g: 1234" type="password" name="checkpass" id="checkpass">
+            <h1>3. Decrypt Emojis</h1>
+            <button id="decryption-btn">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/ffffff/unlock.png" alt="unlock"/>                
+                <h1 id="dec">Decrypt Text</h1>
+            </button>
+        </div>
+        <div class="result"></div>
+        <p>Made with <span> ❤️</span> by <span> Bansari Panchal </span></p>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
